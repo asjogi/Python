@@ -1,0 +1,7 @@
+Bill = input("What is the total amount ?")
+Percentage = input( "What is the percentage of tip you are giving 10, 12, 15, 20 ?")
+People = input("Between how many people, Do i need to split it ?")
+# print(1 + (int(Percentage)/100))
+Amount = (float(Bill) * (1 + (int(Percentage)/100))/int(People))
+Amount = round(Amount,2)
+print(f"Total amount for each person is {Amount}")
